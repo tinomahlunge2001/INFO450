@@ -1,0 +1,9 @@
+def looping(lst):
+    summed_lst = []
+    for num in lst:
+        summed_num = sum_recursive(num)
+        summed_lst.append(summed_num)
+    return summed_lst
+numbers = [2, 5, 3]
+result = looping(numbers)
+print(f"The recursively summed list is: {result}")
